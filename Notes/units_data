@@ -1,0 +1,59 @@
+{
+	make: 'nissan',
+	img_src: 'https://www-asia.nissan-cdn.net/content/dam/Nissan/ph/vehicles/Terra/d23/philhd/0-all-new/overview/2019/1160x600-Terra2.png.ximg.l_12_m.smart.png.ximg.l_3_m.smart.png',
+	model_name: 'Terra',
+	link_to: '/model/terra'
+},
+
+{
+	make: 'nissan',
+	img_src: 'https://www-asia.nissan-cdn.net/content/dam/Nissan/ph/vehicles/thumbnail/NAVARA.jpg.ximg.l_3_m.smart.jpg',
+	model_name: 'Navarra',
+	link_to: '/model/navarra'
+},
+
+{
+	make: 'nissan',
+	img_src: 'https://www-asia.nissan-cdn.net/content/dam/Nissan/ph/vehicles/thumbnail/ALMERA.png.ximg.l_3_m.smart.png',
+	model_name: 'Almera',
+	link_to: '/model/almera'
+},
+{
+	make: 'nissan',
+	img_src: 'https://www-asia.nissan-cdn.net/content/dam/Nissan/ph/vehicles/thumbnail/URVAN.jpg.ximg.l_3_m.smart.jpg',
+	model_name: 'NV350 URVAN',
+	link_to: '/model/urvan'
+},
+{
+	make: 'nissan',
+	img_src: 'https://www-asia.nissan-cdn.net/content/dam/Nissan/ph/vehicles/thumbnail/PATROL-ROYALE.png.ximg.l_3_m.smart.png',
+	model_name: 'PATROL ROYALE',
+	link_to: '/model/patrol'
+},
+{
+	make: 'nissan',
+	img_src: 'https://www-asia.nissan-cdn.net/content/dam/Nissan/ph/vehicles/370Z/ProductCode/ProductVersion/Overview/icon_370z_latest.jpg.ximg.l_3_m.smart.jpg',
+	model_name: '370z',
+	link_to: '/model/370z'
+},
+
+{
+	make: 'kia',
+	img_src: 'https://www.kia.com/content/dam/kwcms/ph/en/images/showroom/picantoJA/Picanto_246x140px.png',
+	model_name: 'Picanto',
+	link_to: '/model/picanto'
+},
+
+{
+	make: 'kia',
+	img_src: 'https://www.kia.com/content/dam/kwcms/ph/en/images/showroom/sorento/kia_ph_sorento.png',
+	model_name: 'Sorento',
+	link_to: '/model/sorento'
+},
+
+{
+	make: 'kia',
+	img_src: 'https://www.kia.com/content/dam/kwcms/ph/en/images/showroom/seltos/ShoppingTool-246x140-CarWithNew.png',
+	model_name: 'Seltos',
+	link_to: '/model/seltos'
+},

@@ -1,0 +1,86 @@
+<template>
+    <div>
+        <!-- Start: Main -->
+        <section id="body-main-section">
+            <div class="container">
+                <div id="row-1" class="row">
+                    <div id="col-1" class="col-lg-8">
+                        <h4>Vehicle Range</h4>
+                        <hr>
+                        <div id="vehicle-display" class="row">
+                            <div class="col-lg-4 text-center display-item">
+                                <a href="item-single-view.html">
+                                    <img src="../assets/img/patrol.png">
+                                </a>
+                                <h6 class="item-name" style="font-weight: bold;">PATROL ROYALE</h6>
+                            </div>
+                            <div class="col-lg-4 text-center display-item"><a href="item-single-view.html"><img src="../assets/img/terra.jpeg"></a>
+                                <h6 class="item-name" style="font-weight: bold;">TERRA</h6>
+                            </div>
+                            <div class="col-lg-4 text-center display-item"><a href="item-single-view.html"><img src="../assets/img/navarra.jpg"></a>
+                                <h6 class="item-name" style="font-weight: bold;">NAVARRA</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="col-2" class="col-lg-4">
+                        <h4>Select Dealership</h4>
+                        <hr>
+                        <div id="widget" class="widget">
+                            <select class="form-control custom-select" v-model="selected" @change = "getContact(selected)" >
+                                <optgroup label="DEALERSHIP">
+                                    <option v-for="(opt, index) in contactMenuOptions" :key="index" :value="opt.value">{{opt.option}}</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div id="widget-1"
+                            class="widget">
+                            <h6>{{ data.title }}</h6>
+                            <p>{{  data.body }}</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End: Main -->
+        <!-- End: Main-2-Column -->
+    </div>
+</template>
+
+<script>
+
+    export default {
+        name: 'Microsite',
+
+        data() {
+            return {
+
+                banner: 'nissan-bataan.jpg',
+                selected: '',
+
+                contactMenuOptions: [
+                    { option: 'Luzon', value:'1' },
+                    { option: 'Visayas', value:'2' },
+                    { option: 'Mindanao', value:'3' },
+                ],
+
+                data: []
+            }
+
+
+        }, 
+
+        methods: {
+            getContact(id) {
+                 fetch('https://jsonplaceholder.typicode.com/posts/' + id)
+                .then(response => response.json())
+                .then((data) =>{
+                    this.data = data
+                })
+            }
+        },
+
+        
+    }
+</script>

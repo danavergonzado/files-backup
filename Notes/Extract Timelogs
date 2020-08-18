@@ -1,0 +1,13 @@
+SELECT
+    tl.date,
+    u.name,
+    u.employee_id,
+    tl.timein,
+    tl.timeout
+FROM
+    time_logs tl
+INNER JOIN users u ON
+    tl.employee_id = u.employee_id
+WHERE
+    tl.date BETWEEN '2020-08-1' AND '2020-08-14' 
+AND u.branch_id = 1 
